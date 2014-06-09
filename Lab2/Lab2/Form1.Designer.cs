@@ -49,9 +49,14 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -132,6 +137,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.textBox14);
+            this.groupBox4.Controls.Add(this.textBox13);
             this.groupBox4.Location = new System.Drawing.Point(627, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 92);
@@ -242,6 +251,34 @@
             this.textBox12.Size = new System.Drawing.Size(69, 20);
             this.textBox12.TabIndex = 1;
             // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(6, 19);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(80, 20);
+            this.textBox13.TabIndex = 0;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(114, 19);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(80, 20);
+            this.textBox14.TabIndex = 1;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(6, 62);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(80, 20);
+            this.textBox15.TabIndex = 2;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(114, 62);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(80, 20);
+            this.textBox16.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,6 +297,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +326,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }
 

@@ -32,34 +32,52 @@ namespace Lab2
                 kompl r = new kompl();
                 r.kompl1(Convert.ToDouble(K_A), Convert.ToDouble(K_B));
             }
-           
+
         }
     }
     public class norma
-    {   
-            public double vekt_d(double[] vekt)
+    {
+        public double vekt_d(double[] vekt)
+        {
+            double j = 0;
+            double sum = 0;
+            for (int i = 0; i < 9; i++)
             {
-                double j = 0;
-                double sum = 0;
-                for (int i = 0; i < 9; i++)
-                {
-                    sum += vekt[i]*vekt[i];
-                }
-                sum = Math.Sqrt(sum);
-                string otv = Convert.ToString(sum);
-                MessageBox.Show(otv);
-                return 0;
+                sum += vekt[i] * vekt[i];
             }
-
-            public double kompl_d(double a, double b)
-            {
-                double abs = Math.Sqrt(a * a + b * b);
-                string otv = Convert.ToString(abs);
-                MessageBox.Show(otv);
-                return 0;
-            }
+            sum = Math.Sqrt(sum);
+            string otv = Convert.ToString(sum);
+            MessageBox.Show(otv);
+            return 0;
         }
-    
+
+        public double kompl_d(double a, double b)
+        {
+            double abs = Math.Sqrt(a * a + b * b);
+            string otv = Convert.ToString(abs);
+            MessageBox.Show(otv);
+            return 0;
+        }
+
+        public double matrix_d(double[,] matrixx)
+        {
+            double max_abs=0;
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    if (matrixx[i,j]>max_abs)
+                    {
+                        max_abs = matrixx[i, j];
+                    }
+                }
+            }
+                string otv = Convert.ToString(max_abs);
+                MessageBox.Show(otv);
+                return 0;
+        }
+    }
+
     public class vektor : norma
     {
         public void vekt1(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j)
@@ -73,12 +91,16 @@ namespace Lab2
     {
         public void kompl1(double a, double b)
         {
-            double asd = kompl_d(a,b);
+            double asd = kompl_d(a, b);
         }
     }
 
     public class matrix : norma
     {
+        public void matrix1(double a, double b, double c, double d)
+        {
+            double[,] mas = { { a, b }, { c, d } };
 
+        }
     }
 }
