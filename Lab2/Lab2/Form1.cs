@@ -32,7 +32,12 @@ namespace Lab2
                 kompl r = new kompl();
                 r.kompl1(Convert.ToDouble(K_A), Convert.ToDouble(K_B));
             }
-
+            if (radioButton3.Checked == true)
+            {
+                string M_A = textBox13.Text, M_B = textBox14.Text, M_C = textBox15.Text, M_D = textBox16.Text;
+                matrix mat = new matrix();
+                mat.matrix1(Convert.ToDouble(M_A), Convert.ToDouble(M_B), Convert.ToDouble(M_C), Convert.ToDouble(M_D));
+            }
         }
     }
     public class norma
@@ -68,7 +73,7 @@ namespace Lab2
                 {
                     if (matrixx[i,j]>max_abs)
                     {
-                        max_abs = matrixx[i, j];
+                        max_abs = Math.Abs(matrixx[i, j]);
                     }
                 }
             }
@@ -100,7 +105,7 @@ namespace Lab2
         public void matrix1(double a, double b, double c, double d)
         {
             double[,] mas = { { a, b }, { c, d } };
-
+            double asf = matrix_d(mas);
         }
     }
 }
